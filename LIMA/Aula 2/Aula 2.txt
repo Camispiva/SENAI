@@ -1,0 +1,43 @@
+<html>
+     <head>
+     </head>
+     <body>
+	<p>Exemplo<b>Teste</b></p>
+	<p>Exemplo<i>Teste</i></p>
+	<p>Exemplo<sup>Teste</sup></p>
+	<p>Exemplo<sub>Teste</sub></p>
+	<p>Exemplo<ins>Teste</ins></p>
+	<p>Exemplo<del>Teste</del></p>
+	<p>Exemplo<small>Teste</small></p>
+	<p>Exemplo<mark>Teste</mark></p>
+	<img src="Flor.jpg"/>
+	<a href="https://w3schools.com/">w3schools</a>
+		<ol>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+		</ol>
+		<table border="1">
+			<thead> 
+				<tr>
+					<th>Coluna1</th>
+					<th>Coluna2</th>
+					<th>Coluna3</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>L1c1</td>
+					<td>L1c2</td>
+					<td>L1c3</td>
+				</tr>
+				<tr>
+					<td>L2c1</td>
+					<td>L2c2</td>
+					<td>L2c3</td>
+				</tr>
+					
+			</tbody>
+		</table>
+     </body>
+<html>
