@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Pizzaria>
+    <Cardapio>
+	    <Pizza>
+		<Nome>Pizza de Mussarela</Nome>
+		<Preço>R$30</Preço>
+	    <Nome>Pizza de Espinafre</Nome>
+		<Preço>R$45</Preço>
+	    <Nome>Pizza Calabresa</Nome>
+		<Preço>R$50</Preço>
+	    <Nome>Pizza Portuguesa</Nome>
+		<Preço>R$60</Preço>
+        </Pizza>
+    </Cardapio>
+</Pizzaria>
