@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    /* flex-direction: row; */
+    height: 100vh;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: 90vw;
+    height: 80vh; 
+}
+/* 
+.red{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+    
+.green{
+     background-color: green;
+     height: 200px;
+     width: 200px;
+}
+    
+.blue{
+    background-color: blue;
+    height: 200px;
+    width: 200px; 
+} */
+
+header{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}
+
+main{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+}
+
+footer{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
