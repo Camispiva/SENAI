@@ -37,17 +37,17 @@ body{
 
 header{
     background-color: red;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 1000px;
 }
 
 main{
     background-color: green;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 1000px;
 }
 
 footer{
     background-color: blue;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 1000px;
