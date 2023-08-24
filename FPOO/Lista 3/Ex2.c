@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
 	int contador;
-	for(contador = 20; contador <= 0; contador+=2){
+	for(contador = 200; contador >= 10; contador--){
 		printf("%d\n", contador);
 	}
 	return 0;
