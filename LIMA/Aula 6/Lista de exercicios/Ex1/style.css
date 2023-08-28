@@ -1,0 +1,10 @@
+.lista2{
+    display: flex;
+}
+.lista2 li, .lista3 li{
+    margin: 15px;
+}
+.lista3{
+    display: flex;
+    list-style: none;
+}

@@ -1,0 +1,34 @@
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    height: 15vh;
+    border-collapse: collapse;
+}
+
+th {
+    width: 100px;
+    text-align: left;
+}
+
+td {
+    width: 100px;
+}
+
+.curso{
+    width: 200px;
+}
+  
+tr {
+    border-bottom: 1pt solid black;
+    display: flex;
+    margin: 20px;
+}
+
+tr {
+    display: flex;  
+    margin: 10px;
+}
