@@ -15,7 +15,7 @@ int main(){
     fclose(arquivo);
     return 0;
 }
-    ```
+	´´´
 - Agora vamos ler o arquivo linha por linha
 lelinha.c
 ```c

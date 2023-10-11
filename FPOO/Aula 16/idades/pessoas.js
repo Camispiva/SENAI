@@ -4,6 +4,7 @@ class Pessoa {
         this.nascimento = nascimento;
         this.sexo = sexo;
         this.idade = this.calcIdade(); //Atributo calculado
+        this.classifica = this.classificar();
     }
 
     calcIdade() {
@@ -24,21 +25,23 @@ class Pessoa {
                     <td>${this.nascimento.toLocaleDateString()}</td>
                     <td>${this.sexo}</td>
                     <td>${this.idade}</td>
+                    <td>${this.classifica}</td>
                 </tr>`;
     }
     classificar(){
-        if(this.calcIdade() > 0 && this.calcIdade() < 11){
+        if(this.idade <= 11){
             return "Criança";
-        }else if(this.calcIdade() > 12 && this.calcIdade() < 17){
+        }else if(this.idade >= 12 && this.idade <= 17){
             return "Adolescente";
-        }else if(this.calcIdade() > 18 && this.calcIdade() < 29){
+        }else if(this.idade >= 18 && this.idade <= 29){
             return "Jovem";
-        }else if(this.calcIdade() > 30 && this.calcIdade() < 59){
+        }else if(this.idade >= 30 && this.idade <= 59){
             return "Adulto";
-        }else if{
+        }else{
             return "Idoso";
         }
     }
+}
 
 const pessoas = [];
 
@@ -53,7 +56,7 @@ const corpo = document.getElementById("corpoTabela");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    let pessoa = new Pessoa(form.nome.value, new Date(form.nascimento.value), form.sexo.value);
+    let pessoa = new Pessoa(form.nome.value, new Date(form.nascimento.value), form.sexo.value,);
     pessoas.push(pessoa);
     form.reset();
     atualizaTabela();
@@ -61,7 +64,7 @@ form.addEventListener("submit", (event) => {
 
 function atualizaTabela() {
     corpo.innerHTML = "";
-    pessoas.forEach((pessoa) => {
-        corpo.innerHTML += pessoa.toTable();
+    pessoas.forEach((pessoas) => {
+        corpo.innerHTML += pessoas.toTable();
     });
 }
