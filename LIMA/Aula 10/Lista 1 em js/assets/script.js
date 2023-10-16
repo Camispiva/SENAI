@@ -6,14 +6,14 @@ function ex1(){
     let resultado = (a + b) / c
 
     let str = document.querySelector(".resultado")
-    str.innerHTML = resultado
+    str.innerHTML = resultado.toFixed(2)
 }
 
 function ex2(){
     let a = document.getElementById("velocidade").value
     let b = document.getElementById("distância").value
 
-    document.querySelector(".resultado2").innerHTML = b / a
+    document.querySelector(".resultado2").innerHTML = (b / a).toFixed(2)
 }
 
 function ex3(){
@@ -21,7 +21,7 @@ function ex3(){
     let b = Number(document.getElementById("salario").value)
     let c = Number(document.getElementById("reajuste").value)
 
-    document.querySelector(".resultado3").innerHTML = `${nome}Seu salario é:${b * (c + 100) / 100}`
+    document.querySelector(".resultado3").innerHTML = `${nome}Seu salario é:${b * ((c + 100) / 100).toFixed(2)}`
 }
 
 function ex4(){
@@ -44,7 +44,7 @@ function ex5(){
 
 function ex6(){
     let distancia = Number (document.getElementById("distancia").value)
-    document.querySelector(".resultado6").innerHTML = distancia / 900 
+    document.querySelector(".resultado6").innerHTML = (distancia / 900).toFixed(2)
 }
 
 function ex7(){
@@ -53,7 +53,7 @@ function ex7(){
 
     let resultado = caminhoes * 250
     resultado = (resultado / 18) / alqueires
-    document.querySelector(".resultado7").innerHTML = resultado
+    document.querySelector(".resultado7").innerHTML = resultado.toFixed(2)
 }
 
 function ex8(){
@@ -65,5 +65,5 @@ function ex8(){
     let resultado = 2 * PI * raio * (raio + altura)
     let resultado2 = PI * raio * raio * altura
 
-    document.querySelector(".resultado8").innerHTML = resultado, resultado2
+    document.querySelector(".resultado8").innerHTML = resultado.toFixed(2), resultado2.toFixed(2)
 }
