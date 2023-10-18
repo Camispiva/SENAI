@@ -1,14 +1,14 @@
-class calcTrab{
+class Pagamento {
+    //Método construtor
     constructor(nome, salario){
         this.nome = nome;
         this.salario = salario;
-        this.inss = this.INSS();
-        this.irrf = this.IRRF();
-        this.salarioLiquido = this.salario - this.irrf;
-        this.salarioBase = this.salario - this.inss;
+        this.salarioBase = (this.salario - this.inss()).toFixed(2);
+        this.salarioLiquido = (this.salarioBase - this.irrf()).toFixed(2);
     }
 
-    INSS(){
+    //Métodos de cálculo
+    inss() {
         if (this.salario < 1320.01)
             return this.salario * 7.5 / 100;
         else if (this.salario < 2571.30)
@@ -19,11 +19,11 @@ class calcTrab{
             return this.salario * 14 / 100;
         else
             return 1051.05;
-        }
+    }
 
-    IRRF(){
+    irrf() {
         if (this.salario < 1903.99)
-                return 0;
+            return 0;
         else if (this.salario < 2826.66)
             return this.salario * 7.5 / 100 - 142.8;
         else if (this.salario < 3751.06)
@@ -32,8 +32,8 @@ class calcTrab{
             return this.salario * 22.5 / 100 - 636.13;
         else
             return this.salario * 27.5 / 100 - 869.36;
-        }    
+    }
 }
 
-let pessoa = new calcTrab("Igor", 2600)
-console.log(pessoa)
+const pgto1 = new Pagamento("João", 2689);
+// console.log(pgto1);
