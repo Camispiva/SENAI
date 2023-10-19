@@ -22,3 +22,7 @@ function criarCard(){
         cards.appendChild(cardNew);
     })
 }
+function remove(e){
+    e.parentNode.remove();
+    pessoas.splice(e, 1)
+}
